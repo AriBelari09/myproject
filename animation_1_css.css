@@ -1,0 +1,22 @@
+.btn{
+    margin:0 auto;
+    position:relative;
+    font-size: 18px;
+    line-height: 60px;
+    border-radius: 10px;
+    border: none;
+    top:0;                                         /** наша кнопка стоит в самом начале сайта(top-0)**/           
+    padding: 0 30px;
+    display:block;
+    color:#fff;
+    background-color: rgb(144, 144, 231);                       
+    box-shadow:0 5px 0px;
+    transition-duration: 2s,1ms;                          /**фон кнопки (1сек) смена местоположения(1мс)**/
+    transition-property:background-color,top;         /**Только эти элементы будут анимироваться**/
+    transition-delay: 0ms,1s;                
+}
+.btn:hover{                             /**наведение мыши на кнопку и будет нашей анимацией**/
+    top:10px;                              /**Тогда мы опускаем нашу кнопку сверху на 10пикс**/
+    box-shadow: 0 3px 0px;
+    background-color: rgb(9, 4, 55);          /**При этом меняя и цвет**/
+}
